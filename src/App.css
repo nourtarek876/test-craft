@@ -1,38 +1,503 @@
-.App {
+/* src/App.css */
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* start .navbar */
+.navbar {
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 0, 0) 11.2%,
+    rgb(11, 132, 145) 91.1%
+  );
+  background-size: contain;
+}
+
+.navbar h1 {
+  font-family: "Italiana", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 10px;
+  text-align: left;
+  color: #00ffff;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+@media (max-width: 800px) {
+  .navbar h1 {
+    margin: 0;
+    padding: auto;
+    font-size: 40px;
+    line-height: 25px;
+  }
+}
+
+.text-p {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #00ffff;
+}
+
+.navbar p:hover {
+  color: #707070;
+}
+
+@media (min-width: 800px) {
+  .navbar p {
+    position: relative;
+    left: 150px;
+  }
+}
+
+/* end navbar */
+
+/* start landing page */
+.landing-page {
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
+  height: 100%;
+  padding: 40px 20px;
+}
+
+.landing-text {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing-text h1 {
+  font-family: "Playfair Display", serif;
+  color: #00ffff;
+  font-size: 60px;
+  padding: 30px;
+  letter-spacing: 0.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-page p {
+  font-family: "Playfair Display", serif;
+  color: #00ffff;
+  font-size: 30px;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing-logos {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 80%;
+  flex-wrap: wrap;
+}
+.landing-logos .logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5,
+.logo6,
+.logo7,
+.logo8,
+.logo9,
+.logo10 {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 50px;
+  display: flex;
+  position: relative;
+  left: 140px;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 900px) {
+  .landing-logos .logo1,
+  .logo2,
+  .logo3,
+  .logo4,
+  .logo5,
+  .logo6,
+  .logo7,
+  .logo8,
+  .logo9,
+  .logo10 {
+    left: 40px;
+    width: 100%;
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.landing-logos .logo1 {
+  background-image: url(./logo/html-5.png);
+}
+.logo2 {
+  background-image: url(./logo/icons8-css-480.png);
+}
+.logo3 {
+  background-image: url(./logo/java-script.png);
+}
+.logo4 {
+  background-image: url(./logo//java.png);
+}
+.logo6 {
+  background-image: url(./logo/angularjs.png);
+}
+.logo5 {
+  background-image: url(./logo/document.png);
+}
+.logo7 {
+  background-image: url(./logo/bootstrap.png);
+}
+.logo8 {
+  background-image: url(./logo/icons8-python-480.png);
+}
+.logo9 {
+  background-image: url(./logo/database.png);
+}
+.logo10 {
+  background-image: url(./logo/icons8-flutter-480.png);
+}
+
+/* end landing bage */
+
+/* start about */
+
+.abouts {
+  background: linear-gradient(
+    178.6deg,
+    rgb(232, 245, 253) 3.3%,
+    rgb(252, 253, 255) 109.6%
+  );
+  padding: 30px 20px;
+  height: 100%;
+}
+.about-text {
+  text-align: center;
+}
+
+.about-text h1 {
+  font-family: "Playfair Display", serif;
+  color: #050064;
+  font-size: 60px;
+  padding: 30px;
+  letter-spacing: 0.2rem;
+}
+
+.about-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-cards .cra {
+  margin: 120px 20px;
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1000px) {
+  .about-cards .cra {
+    margin: 40px 20px;
   }
 }
+
+.cra h2 {
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  color: #141414ee;
+}
+
+.icon-card {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+
+/* end about */
+
+/* start services */
+.services {
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
+  height: 100%;
+  padding: 50px 20px;
+}
+
+.services-text {
+  text-align: center;
+}
+
+.services-text h1 {
+  font-family: "Playfair Display", serif;
+  color: #00ffff;
+  font-size: 60px;
+  padding: 30px;
+  letter-spacing: 0.2rem;
+}
+
+.services-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services-card {
+  width: 500px;
+  height: 250px;
+  background: radial-gradient(
+    circle at 1.8% 4.8%,
+    rgb(17, 23, 58) 0%,
+    rgb(58, 85, 148) 90%
+  );
+  margin: 30px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+@media (max-width: 900px) {
+  .services-card {
+    height: 300px;
+  }
+  .services-cards .nth-3 {
+    height: 350px;
+  }
+}
+
+.services-card h2 {
+  color: #eee;
+  font-size: 35px;
+  letter-spacing: 0.1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.services-card p {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1rem;
+  color: #cbcbcb;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.services-card a {
+  text-decoration: none;
+  color: #eee;
+  background-color: #2111ff;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.services-card a:hover {
+  color: #2111ff;
+  background-color: #eee;
+}
+
+/* end services */
+
+/* start footer */
+.footer {
+  background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .copy-write {
+  color: #333;
+  font-size: 18px;
+}
+.footer .developer {
+  color: #00ffff;
+  font-size: 12px;
+  display: flex;
+  text-align: end;
+  justify-content: flex;
+  position: relative;
+  left: 300px;
+}
+@media (max-width: 1080px) {
+  .footer .developer {
+    left: 0;
+  }
+}
+
+/* end footer */
+
+/* start paid */
+.paid-landing {
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
+  height: 100%;
+  padding: 40px 20px;
+}
+
+.paid-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 90%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.paid-text h1 {
+  font-family: "Playfair Display", serif;
+  color: #00ffff;
+  font-size: 60px;
+  padding: 30px;
+  letter-spacing: 0.2rem;
+}
+
+.paid-text p {
+  color: #eee;
+  font-size: 20px;
+}
+/* end paid */
+
+/* start contact */
+.contact-landing {
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
+  height: 90vh;
+  padding: 40px 20px;
+}
+
+.contact-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.contact-info .info {
+  margin: 30px;
+  text-align: left;
+}
+.info a {
+  text-decoration: none;
+  color: #eee;
+}
+.info a:hover {
+  color: #00ffff;
+}
+
+.contact-landing .contact-icon {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+.contact-landing .contact-info h1 {
+  color: #eee;
+}
+/* end contact */
+
+/* start free landing */
+.free-landing {
+  background: #eee;
+}
+
+.free-landing .web-dev,
+.mobile-dev,
+.python,
+.c,
+.computer-dev,
+.cypher
+{
+  height: 90vh;
+}
+
+.free-landing .web-dev,
+.python,
+.computer-dev
+{
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
+}
+
+.free-landing .web-dev,
+.python,
+.computer-dev h1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 40px;
+  flex-direction: column;
+  color: #00ffff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.free-landing .mobile-dev,
+.c,
+.cypher
+{
+  background: #eee;
+}
+
+.free-landing .mobile-dev,
+.c,
+.cypher h1
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 40px;
+  color:#050064;
+  font-size: 40px;
+  font-weight: 500;
+}
+/* end free landing  */
