@@ -87,14 +87,14 @@ function Main() {
         </div>
         <div className="services-cards">
           <div className="services-card">
-            <h2>Intro In HTML & CSS</h2> <p>Instructor: Elzero Web School</p>
+            <h2>Intro In HTML & CSS</h2>
+            <p>Instructor: Elzero Web School</p>
             <p>Learn the basics of HTML and CSS.</p>
-            <a href="https://www.youtube.com/watch?v=4OGWPn-Q__I">
-              Watch Now
-            </a>
+            <a href="https://www.youtube.com/watch?v=4OGWPn-Q__I">Watch Now</a>
           </div>
           <div className="services-card">
-            <h2>Intro To Python</h2> <p>Instructor: Codzilla</p>
+            <h2>Intro To Python</h2>
+            <p>Instructor: Codzilla</p>
             <p>
               Get started with Python, one of the most popular programing
               languages for data scince.
@@ -104,7 +104,8 @@ function Main() {
             </a>
           </div>
           <div className="services-card nth-3">
-            <h2>JavaScript Essentials</h2> <p>Instructor: Abdelrahman Gamal</p>
+            <h2>JavaScript Essentials</h2>
+            <p>Instructor: Abdelrahman Gamal</p>
             <p>
               Understand the fundamentals of JavaScript and how to use it in web
               development
@@ -121,11 +122,13 @@ function Main() {
             </a>
           </div>
         </div>
+        <a href="/Free"><h3>See All Videos</h3></a>
       </div>
       {/* end servesice */}
       {/* start footer */}
       <div className="footer">
-      <div className="copy-write">© 2024 CORSI ALL rights reserved.</div> <div className="developer">NOUR TAREK CODE & DESIGN</div>
+        <div className="copy-write">© 2024 CORSI ALL rights reserved.</div>
+        <div className="developer">NOUR TAREK CODE & DESIGN</div>
       </div>
       {/* end footer */}
     </>
