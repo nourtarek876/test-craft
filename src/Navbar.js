@@ -8,33 +8,31 @@ import Navbar from "react-bootstrap/Navbar";
 function Navbar1() {
   return (
     <header>
-      {/* start header */}
-
-      <Navbar expand="lg" className="navbar">
-        <Container>
-          <Navbar.Brand className="title" href="/">
-            <h1> Corsi </h1>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav links">
-            <Nav className="me-auto block text-p">
-              <Nav.Link href="/">
-                <p>Home</p>
-              </Nav.Link>
-              <Nav.Link href="/Free">
-                <p>Free courses</p>
-              </Nav.Link>
-              <Nav.Link href="/Paid">
-                <p> Paid courses </p>
-              </Nav.Link>
-              <Nav.Link href="/Contact">
-                <p>Contact</p>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
+     <Navbar expand="lg" className="navbar">
+          <Container>
+            <Navbar.Brand className="title" href="#home">
+              <h1> Crafteria </h1> <br />
+              <h5> Craft Your Dreams</h5>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav links">
+              <Nav className="me-auto block">
+                <Nav.Link href="/">
+                  <p>Home</p>
+                </Nav.Link>
+                <Nav.Link href="#link">
+                  <p>About</p>
+                </Nav.Link>
+                <Nav.Link href="/Special">
+                  <p>Special Deals</p>
+                </Nav.Link>
+                <Nav.Link href="/Contact">
+                  <p>Contact</p>
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
       {/* end header */}
     </header>
   );
